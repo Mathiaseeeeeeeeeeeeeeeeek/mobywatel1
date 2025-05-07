@@ -1,1 +1,8 @@
-
+<?php
+session_start();
+// Automatyczne zalogowanie bez wymagania danych
+$_SESSION['loggedin'] = true;
+$_SESSION['username'] = 'Gość'; // Domyślna nazwa użytkownika
+header("Location: dashboard.php");
+exit();
+?>
