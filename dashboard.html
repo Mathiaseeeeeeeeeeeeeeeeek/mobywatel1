@@ -3,7 +3,7 @@ session_start();
 // Ustaw domyślne wartości jeśli nie ma sesji
 $_SESSION['loggedin'] = $_SESSION['loggedin'] ?? true;
 $_SESSION['username'] = $_SESSION['username'] ?? 'Gość';
-$is_admin = false; // Wyłącz funkcje admina
+$is_admin = true; // Wyłącz funkcje admina
 ?>
 
 <!DOCTYPE html>
